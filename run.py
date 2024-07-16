@@ -4,16 +4,16 @@ CUSTOMER = []
 def get_user_height():   
     '''
     Get user height in cms 
-    '''    
-    while True:   
-        height = input(f'Please enter your height in centimeters:\n')           
-        if(validate_input(height)):
-            print('Height is valid')
-            CUSTOMER.append(height)    
-            print(f'Customer height: {CUSTOMER[0]}cm')
+    ''' 
+    while True:
+        try:
+            height = int(input("Please enter your height in centimeters. Type a number:\n"))
+        except ValueError:
+            print("Sorry, you must type a number for your height.")
+            continue
+        else:
+            CUSTOMER.append(height)
             break
-   
-              
 
 # Function to get user weight in kilograms
 def get_user_weight():
@@ -21,16 +21,15 @@ def get_user_weight():
     Get user weight in cms 
     '''
     weight = input(f'Please enter your weight in kilograms:\n')
-    CUSTOMER.append(weight)    
-    #print(f'Customer weight: {CUSTOMER[1]}kg')
+    CUSTOMER.append(weight)  
+    
 # Function to calculate users BMI
 def get_user_bmi(height, weight):
     ''' 
     Calculate the user's BMI
     '''
     bmi = round((int(weight) / int(height) / int(height)) * 10000 , 1)
-    CUSTOMER.append(bmi)
-    #print(f'Customer BMI : {bmi}')
+    CUSTOMER.append(bmi)    
 
 # Function to get users age
 def get_user_age():
@@ -38,8 +37,7 @@ def get_user_age():
     Get user age
     '''
     age = input(f'Please enter your age in years (enter a number only):\n')
-    CUSTOMER.append(age)
-    #print(f'Customer Age: {age} years')
+    CUSTOMER.append(age)    
 # Function to get users workout schedule (num of days per week)
 
 # Function to validate user height and weight input
@@ -66,6 +64,10 @@ def main():
     get_user_height()   
     get_user_weight()
     get_user_bmi(CUSTOMER[0], CUSTOMER[1])
-    get_user_age()
+    get_user_age()    
+    print(f'Height: {CUSTOMER[0]}\nWeight: {CUSTOMER[1]}\nBMI: {CUSTOMER[2]}\nAge: {CUSTOMER[3]}\n')
+print("---------------------------------------------")
 print("----  Welcome to Pete's Gym Kit Costing  ----")
+print("---------------------------------------------")
+print('')
 main()
