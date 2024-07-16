@@ -1,5 +1,3 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
 print("Welcome to Pete's Gym Kit Costing")
 
@@ -17,3 +15,4 @@ print("Welcome to Pete's Gym Kit Costing")
 
 # Function to get array values of user data to recommend gym dumbell set and cost  
 
+# Function to check user age, bmi to return a dumbell set and cost
