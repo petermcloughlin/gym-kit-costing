@@ -1,4 +1,5 @@
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
+CUSTOMER = []
 print("Welcome to Pete's Gym Kit Costing")
 
 # Function to get user height in meters
