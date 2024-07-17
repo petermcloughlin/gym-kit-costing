@@ -1,20 +1,10 @@
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
 CUSTOMER = []
-MALES = {
-    'age' : {
-            'Under30':'18 to 29',
-            'Under50':'30 to 49',
-            'Under65':'50 to 64',
-            'Seniors': '65 plus'
-            }    
-}
-FEMALES = {
-    'age' : {
-            'Under30':'18 to 29',
-            'Under50':'30 to 49',
-            'Under65':'50 to 64',
-            'Seniors': '65 plus'
-            }    
+AGES = {  
+        'Under30':'18 to 29',
+        'Under50':'30 to 49',
+        'Under65':'50 to 64',
+        'Seniors': '65 plus'              
 }
 BMI = [18.5, 25, 30, 40]
 DUMBELL_KIT = {
@@ -116,7 +106,11 @@ def get_user_schedule():
             CUSTOMER.append(hours)
             break
 
-# Function to check user information to return a dumbell set and cost
+# Function to select dumbell set and cost, using BMI and age
+
+def get_dumbell_set(age, bmi):
+    return
+
 
 # main method call
 
