@@ -1,6 +1,7 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome,
+Hi there,
+My application is a gym set costing app which takes some user input, calculates their BMI and returns a remcommended gym kit set and cost. The live app is accessible in the following  [link](https://gym-kit-costing-194b49d03f96.herokuapp.com/)
 
 This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **May 14, 2024**
 
