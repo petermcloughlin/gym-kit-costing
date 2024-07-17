@@ -1,12 +1,5 @@
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
 CUSTOMER = []
-AGES = {  
-        'Under30':'18 to 29',
-        'Under50':'30 to 49',
-        'Under65':'50 to 64',
-        'Seniors': '65 plus'              
-}
-BMI = [18.5, 25, 30, 40]
 DUMBELL_KIT = {
     'Beginner':{
         'Dumbells': '2 X 3kg adjustable dumbell set',
@@ -14,13 +7,13 @@ DUMBELL_KIT = {
         'Total Price': '€35'
     },
     'Intermediate':{
-        'Dumbells': '2 X 15kg adjustable set',
-        'Barbell': '1 X 30kg barbell',
+        'Dumbells': '2 X 10kg adjustable set',
+        'Barbell': '1 X 20kg barbell',
         'Total Price': '€75'
     },
     'Advanced':{
-        'Dumbells': '2 X 30kg adjustable set',
-        'Barbell': '1 X 50kg barbell',
+        'Dumbells': '2 X 20kg adjustable set',
+        'Barbell': '1 X 40kg barbell',
         'Total Price': '€135'
     }
 }
@@ -109,8 +102,50 @@ def get_user_schedule():
 # Function to select dumbell set and cost, using BMI and age
 
 def get_dumbell_set(age, bmi):
-    return
-
+    if bmi < 18.5:
+        if age > 18 and age < 30:
+            print('Beginner')
+        elif age >= 30 and age < 50:
+            print('Beginner')
+        elif age >=50 and age < 65:
+            print('Beginner')
+        elif age >= 65:
+            print('Beginner')
+        else:
+            print('Sorry, you are too young to purchase our gym kits.')
+    elif bmi >= 18.5 and bmi < 25:
+        if age > 18 and age < 30:
+            print('Intermediate')
+        elif age >= 30 and age < 50:
+            print('Intermediate')
+        elif age >=50 and age < 65:
+            print('Beginner')
+        elif age >= 65:
+            print('Beginner')
+        else:
+            print('Sorry, you are too young to purchase our gym kits.')
+    elif bmi >= 25 and bmi < 30:
+        if age > 18 and age < 30:
+            print('Intermediate')
+        elif age >= 30 and age < 50:
+            print('Intermediate')
+        elif age >=50 and age < 65:
+            print('Beginner')
+        elif age >= 65:
+            print('Beginner')
+        else:
+            print('Sorry, you are too young to purchase our gym kits.')
+    elif bmi > 30:
+        if age > 18 and age < 30:
+            print('Intermediate')
+        elif age >= 30 and age < 50:
+            print('Intermediate')
+        elif age >=50 and age < 65:
+            print('Beginner')
+        elif age >= 65:
+            print('Beginner')
+        else:
+            print('Sorry, you are too young to purchase our gym kits.')   
 
 # main method call
 
@@ -125,7 +160,7 @@ def main():
     get_user_schedule()
     print('---------- Customer Information ----------')
     print(f'Height: {CUSTOMER[0]}cms\nWeight: {CUSTOMER[1]}kgs\nBMI: {CUSTOMER[2]}\nAge: {CUSTOMER[3]} years\nGender: {CUSTOMER[4]}\nSchedule: {CUSTOMER[5]} hours per week\n')
-
+    get_dumbell_set(CUSTOMER[3], CUSTOMER[2])
 
 print("---------------------------------------------")
 print("----  Welcome to Pete's Gym Kit Costing  ----")
