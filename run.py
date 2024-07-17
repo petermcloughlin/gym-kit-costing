@@ -59,11 +59,14 @@ def get_user_gender():
     while True:
         try:
             gender = str(input(f'Please enter your gender (m for male, f for female):\n'))
-        except ValueError:
+            if gender == 'm' or gender == 'f':
+                CUSTOMER.append(gender)
+            else:
+                raise Exception                
+        except Exception:
             print("Sorry, you must type 'm' or 'f' for your gender.")
             continue
-        else:
-            CUSTOMER.append(gender)
+        else:            
             break
 # Function to get users workout schedule (num of days per week)
 
