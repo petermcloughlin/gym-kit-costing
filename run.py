@@ -1,5 +1,39 @@
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
 CUSTOMER = []
+MALES = {
+    'age' : {
+            'Under30':'18 to 29',
+            'Under50':'30 to 49',
+            'Under65':'50 to 64',
+            'Seniors': '65 plus'
+            }    
+}
+FEMALES = {
+    'age' : {
+            'Under30':'18 to 29',
+            'Under50':'30 to 49',
+            'Under65':'50 to 64',
+            'Seniors': '65 plus'
+            }    
+}
+BMI = [18.5, 25, 30, 40]
+DUMBELL_KIT = {
+    'Beginner':{
+        'Dumbells': '2 X 3kg adjustable dumbell set',
+        'Barbell': '1 X 6kg barbell',
+        'Total Price': '€35'
+    },
+    'Intermediate':{
+        'Dumbells': '2 X 15kg adjustable set',
+        'Barbell': '1 X 30kg barbell',
+        'Total Price': '€75'
+    },
+    'Advanced':{
+        'Dumbells': '2 X 30kg adjustable set',
+        'Barbell': '1 X 50kg barbell',
+        'Total Price': '€135'
+    }
+}
 
 # Function to get user height in meters
 
