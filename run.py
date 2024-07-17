@@ -102,48 +102,81 @@ def get_user_schedule():
 # Function to select dumbell set and cost, using BMI and age
 
 def get_dumbell_set(age, bmi):
+    ''' Recommend Dumbell kit and cost '''
     if bmi < 18.5:
         if age > 18 and age < 30:
-            print('Beginner')
+            print('We recommend a Beginner set')
+            print('---------------------------')
+            print(f'Dumbells: {DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell: {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price: {DUMBELL_KIT["Beginner"]["Total Price"]}')
         elif age >= 30 and age < 50:
-            print('Beginner')
+            print('We recommend a Beginner set')
+            print('---------------------------')
+            print(f'Dumbells: {DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell: {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price: {DUMBELL_KIT["Beginner"]["Total Price"]}')
         elif age >=50 and age < 65:
-            print('Beginner')
+            print('We recommend a Beginner set')
+            print('---------------------------')
+            print(f'Dumbells: {DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell: {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price: {DUMBELL_KIT["Beginner"]["Total Price"]}')
         elif age >= 65:
-            print('Beginner')
+            print('We recommend a Beginner set')
+            print('---------------------------')
+            print(f'Dumbells: {DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell: {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price: {DUMBELL_KIT["Beginner"]["Total Price"]}')
         else:
             print('Sorry, you are too young to purchase our gym kits.')
     elif bmi >= 18.5 and bmi < 25:
         if age > 18 and age < 30:
-            print('Intermediate')
+            print('We recommend an Intermediate set')
+            print('---------------------------')
+            print(f'Dumbells: {DUMBELL_KIT["Intermediate"]["Dumbells"]}\nBarbell: {DUMBELL_KIT["Intermediate"]["Barbell"]}\nTotal Price: {DUMBELL_KIT["Intermediate"]["Total Price"]}')
         elif age >= 30 and age < 50:
-            print('Intermediate')
+            print('We recommend an Intermediate set')
+            print('---------------------------')
+            print(f'Dumbells: {DUMBELL_KIT["Intermediate"]["Dumbells"]}\nBarbell: {DUMBELL_KIT["Intermediate"]["Barbell"]}\nTotal Price: {DUMBELL_KIT["Intermediate"]["Total Price"]}')
         elif age >=50 and age < 65:
-            print('Beginner')
+            print('We recommend a Beginner set')
+            print('---------------------------')
+            print(f'Dumbells: {DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell: {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price: {DUMBELL_KIT["Beginner"]["Total Price"]}')
         elif age >= 65:
-            print('Beginner')
+            print('We recommend a Beginner set')
+            print('---------------------------')
+            print(f'Dumbells: {DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell: {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price: {DUMBELL_KIT["Beginner"]["Total Price"]}')
         else:
             print('Sorry, you are too young to purchase our gym kits.')
     elif bmi >= 25 and bmi < 30:
         if age > 18 and age < 30:
-            print('Intermediate')
+            print('We recommend an Advanced set')
+            print('---------------------------')
+            print(f'Dumbells: {DUMBELL_KIT["Advanced"]["Dumbells"]}\nBarbell: {DUMBELL_KIT["Advanced"]["Barbell"]}\nTotal Price: {DUMBELL_KIT["Advanced"]["Total Price"]}')
         elif age >= 30 and age < 50:
-            print('Intermediate')
+            print('We recommend an Intermediate set')
+            print('---------------------------')
+            print(f'Dumbells: {DUMBELL_KIT["Intermediate"]["Dumbells"]}\nBarbell: {DUMBELL_KIT["Intermediate"]["Barbell"]}\nTotal Price: {DUMBELL_KIT["Intermediate"]["Total Price"]}')
         elif age >=50 and age < 65:
-            print('Beginner')
+            print('We recommend a Beginner set')
+            print('---------------------------')
+            print(f'Dumbells: {DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell: {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price: {DUMBELL_KIT["Beginner"]["Total Price"]}')
         elif age >= 65:
-            print('Beginner')
+            print('We recommend a Beginner set')
+            print('---------------------------')
+            print(f'Dumbells: {DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell: {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price: {DUMBELL_KIT["Beginner"]["Total Price"]}')
         else:
             print('Sorry, you are too young to purchase our gym kits.')
     elif bmi > 30:
         if age > 18 and age < 30:
-            print('Intermediate')
+            print('We recommend an Intermediate set')
+            print('---------------------------')
+            print(f'Dumbells: {DUMBELL_KIT["Intermediate"]["Dumbells"]}\nBarbell: {DUMBELL_KIT["Intermediate"]["Barbell"]}\nTotal Price: {DUMBELL_KIT["Intermediate"]["Total Price"]}')
         elif age >= 30 and age < 50:
-            print('Intermediate')
+            print('We recommend an Intermediate set')
+            print('---------------------------')
+            print(f'Dumbells: {DUMBELL_KIT["Intermediate"]["Dumbells"]}\nBarbell: {DUMBELL_KIT["Intermediate"]["Barbell"]}\nTotal Price: {DUMBELL_KIT["Intermediate"]["Total Price"]}')
         elif age >=50 and age < 65:
-            print('Beginner')
+            print('We recommend a Beginner set')
+            print('---------------------------')
+            print(f'Dumbells: {DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell: {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price: {DUMBELL_KIT["Beginner"]["Total Price"]}')
         elif age >= 65:
-            print('Beginner')
+            print('We recommend a Beginner set')
+            print('---------------------------')
+            print(f'Dumbells: {DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell: {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price: {DUMBELL_KIT["Beginner"]["Total Price"]}')
         else:
             print('Sorry, you are too young to purchase our gym kits.')   
 
@@ -170,3 +203,14 @@ print('Just a few questions before recommending a gym kit and cost.')
 print("---------------------------------------------")
 print('')
 main()
+
+restart = input('Would you like to try another quotation? (y/n)\n')
+if restart == 'y':
+    print('')
+    print('Just a few questions before recommending a gym kit and cost.')
+    print("---------------------------------------------")
+    print('')
+    main()
+elif restart == 'n':
+    print("Goodbye. Thank you for using Pete's Gym Kit Costing app.\n")
+    
