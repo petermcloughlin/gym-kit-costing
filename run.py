@@ -1,17 +1,17 @@
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
 CUSTOMER = []
 DUMBELL_KIT = {
-    'Beginner':{
+    'Beginner' : {
         'Dumbells': '2 X 3kg adjustable dumbell set',
         'Barbell': '1 X 6kg barbell',
         'Total Price': '€35'
     },
-    'Intermediate':{
+    'Intermediate' : {
         'Dumbells': '2 X 10kg adjustable set',
         'Barbell': '1 X 20kg barbell',
         'Total Price': '€75'
     },
-    'Advanced':{
+    'Advanced' : {
         'Dumbells': '2 X 20kg adjustable set',
         'Barbell': '1 X 40kg barbell',
         'Total Price': '€135'
@@ -75,17 +75,18 @@ def get_user_gender():
     '''Get user gender'''
     while True:
         try:
-            gender = str(input(f'Please enter your gender (m for male, f for female):\n'))
+            gender = str(input(f'Please enter your gender (m/f):\n'))
             if gender == 'm' or gender == 'f':
                 CUSTOMER.append(gender)
             else:
-                raise Exception                
+                raise Exception
         except Exception:
             print("Sorry, you must type 'm' or 'f' for your gender.")
             continue
-        else:            
+        else:
             break
 # Function to get users workout schedule (num of days per week)
+
 
 def get_user_schedule():
     '''Get user work out schedule in hours per week'''
@@ -101,6 +102,7 @@ def get_user_schedule():
 
 # Function to select dumbell set and cost, using BMI and age
 
+
 def get_dumbell_set(age, bmi):
     ''' Recommend Dumbell kit and cost '''
     if bmi < 18.5:
@@ -112,7 +114,7 @@ def get_dumbell_set(age, bmi):
             print('We recommend a Beginner set')
             print('---------------------------')
             print(f'Dumbells: {DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell: {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price: {DUMBELL_KIT["Beginner"]["Total Price"]}')
-        elif age >=50 and age < 65:
+        elif age >= 50 and age < 65:
             print('We recommend a Beginner set')
             print('---------------------------')
             print(f'Dumbells: {DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell: {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price: {DUMBELL_KIT["Beginner"]["Total Price"]}')
@@ -131,7 +133,7 @@ def get_dumbell_set(age, bmi):
             print('We recommend an Intermediate set')
             print('---------------------------')
             print(f'Dumbells: {DUMBELL_KIT["Intermediate"]["Dumbells"]}\nBarbell: {DUMBELL_KIT["Intermediate"]["Barbell"]}\nTotal Price: {DUMBELL_KIT["Intermediate"]["Total Price"]}')
-        elif age >=50 and age < 65:
+        elif age >= 50 and age < 65:
             print('We recommend a Beginner set')
             print('---------------------------')
             print(f'Dumbells: {DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell: {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price: {DUMBELL_KIT["Beginner"]["Total Price"]}')
@@ -150,7 +152,7 @@ def get_dumbell_set(age, bmi):
             print('We recommend an Intermediate set')
             print('---------------------------')
             print(f'Dumbells: {DUMBELL_KIT["Intermediate"]["Dumbells"]}\nBarbell: {DUMBELL_KIT["Intermediate"]["Barbell"]}\nTotal Price: {DUMBELL_KIT["Intermediate"]["Total Price"]}')
-        elif age >=50 and age < 65:
+        elif age >= 50 and age < 65:
             print('We recommend a Beginner set')
             print('---------------------------')
             print(f'Dumbells: {DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell: {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price: {DUMBELL_KIT["Beginner"]["Total Price"]}')
@@ -169,7 +171,7 @@ def get_dumbell_set(age, bmi):
             print('We recommend an Intermediate set')
             print('---------------------------')
             print(f'Dumbells: {DUMBELL_KIT["Intermediate"]["Dumbells"]}\nBarbell: {DUMBELL_KIT["Intermediate"]["Barbell"]}\nTotal Price: {DUMBELL_KIT["Intermediate"]["Total Price"]}')
-        elif age >=50 and age < 65:
+        elif age >= 50 and age < 65:
             print('We recommend a Beginner set')
             print('---------------------------')
             print(f'Dumbells: {DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell: {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price: {DUMBELL_KIT["Beginner"]["Total Price"]}')
@@ -178,7 +180,7 @@ def get_dumbell_set(age, bmi):
             print('---------------------------')
             print(f'Dumbells: {DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell: {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price: {DUMBELL_KIT["Beginner"]["Total Price"]}')
         else:
-            print('Sorry, you are too young to purchase our gym kits.')   
+            print('Sorry, you are too young to purchase our gym kits.')
 
 # main method call
 
@@ -194,6 +196,7 @@ def main():
     print('---------- Customer Information ----------')
     print(f'Height: {CUSTOMER[0]}cms\nWeight: {CUSTOMER[1]}kgs\nBMI: {CUSTOMER[2]}\nAge: {CUSTOMER[3]} years\nGender: {CUSTOMER[4]}\nSchedule: {CUSTOMER[5]} hours per week\n')
     get_dumbell_set(CUSTOMER[3], CUSTOMER[2])
+
 
 print("---------------------------------------------")
 print("----  Welcome to Pete's Gym Kit Costing  ----")
@@ -213,4 +216,3 @@ if restart == 'y':
     main()
 elif restart == 'n':
     print("Goodbye. Thank you for using Pete's Gym Kit Costing app.\n")
-    
