@@ -28,7 +28,21 @@ The following screenshots display a flow of the questions asked and validation r
 * [Restart](/ReadmeDocs/AppImage8.PNG "Retsart")
 
 ## Testing
-I used manual testing of the user input within the 
+I used manual testing of the user input within github's workspace console to view the exception messages to be passed back to the user in each case. I also used the [PEP8_Linter](https://pep8ci.herokuapp.com/#) site to validate my python code to ensure it met with the PEP8 standards of indentation and structure.
+
+You can view the result in the following [link](/ReadmeDocs/PEP8.PNG) .
+
+Although it may not have been relevant wiithin this project, I completed a Lighthouse report on the webpage containing the depployed Heruko app. 
+
+You can view the result [here]()
+
+## Bugs and Fixes
+Initially, I encountered issues when calling the relevant exceptions for user input when writing the code but outside of that issue, I didn't encounter too many issues.
+
+## Deployment
+I used Heruko to deployment the application to the web. I followed the steps set out within the Code Institutes tutorials within the Love Sandwiches project. For this project, since I was using any relevant python libraries nor any API's, I did not require the use of .gitignore files, nor the requirements.txt file.
+I achieved a successful deployment using Heruko. Since I used a CUSTOMER array and DUMBELL_KIT dictionary within the run.py, it deployed a lot faster and without any known issues. 
+Post deployment, I had to do a tidy up of the code indentation to ahdere to PEP8 standards.
 
 
 
