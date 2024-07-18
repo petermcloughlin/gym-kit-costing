@@ -1,17 +1,17 @@
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
 CUSTOMER = []
 DUMBELL_KIT = {
-    'Beginner' : {
+    'Beginner': {
         'Dumbells': '2 X 3kg adjustable dumbell set',
         'Barbell': '1 X 6kg barbell',
         'Total Price': '€35'
     },
-    'Intermediate' : {
+    'Intermediate': {
         'Dumbells': '2 X 10kg adjustable set',
         'Barbell': '1 X 20kg barbell',
         'Total Price': '€75'
     },
-    'Advanced' : {
+    'Advanced': {
         'Dumbells': '2 X 20kg adjustable set',
         'Barbell': '1 X 40kg barbell',
         'Total Price': '€135'
@@ -109,113 +109,129 @@ def get_dumbell_set(age, bmi):
         if age > 18 and age < 30:
             print('We recommend a Beginner set')
             print('---------------------------')
-            print(f'Dumbells:{DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell:' +
-            f' {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price:' +
-            f' {DUMBELL_KIT["Beginner"]["Total Price"]}')
+            print(
+                 f'Dumbells:{DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell:' +
+                 f' {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price:' +
+                 f' {DUMBELL_KIT["Beginner"]["Total Price"]}')
         elif age >= 30 and age < 50:
             print('We recommend a Beginner set')
             print('---------------------------')
-            print(f'Dumbells:{DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell:' +
-            f' {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price:' +
-            f' {DUMBELL_KIT["Beginner"]["Total Price"]}')
+            print(
+                 f'Dumbells:{DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell:' +
+                 f' {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price:' +
+                 f' {DUMBELL_KIT["Beginner"]["Total Price"]}')
         elif age >= 50 and age < 65:
             print('We recommend a Beginner set')
             print('---------------------------')
-            print(f'Dumbells:{DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell:' +
-            f' {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price:' +
-            f' {DUMBELL_KIT["Beginner"]["Total Price"]}')
+            print(
+                 f'Dumbells:{DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell:' +
+                 f' {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price:' +
+                 f' {DUMBELL_KIT["Beginner"]["Total Price"]}')
         elif age >= 65:
             print('We recommend a Beginner set')
             print('---------------------------')
-            print(f'Dumbells:{DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell:' +
-            f' {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price:' +
-            f' {DUMBELL_KIT["Beginner"]["Total Price"]}')
+            print(
+                 f'Dumbells:{DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell:' +
+                 f' {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price:' +
+                 f' {DUMBELL_KIT["Beginner"]["Total Price"]}')
         else:
             print('Sorry, you are too young to purchase our gym kits.')
     elif bmi >= 18.5 and bmi < 25:
         if age > 18 and age < 30:
             print('We recommend an Intermediate set')
             print('---------------------------')
-            print(f'Dumbells:{DUMBELL_KIT["Intermediate"]["Dumbells"]}' +
-            '\nBarbell:' +
-            f' {DUMBELL_KIT["Intermediate"]["Barbell"]}\nTotal Price:' +
-            f' {DUMBELL_KIT["Intermediate"]["Total Price"]}')
+            print(
+                 f'Dumbells:{DUMBELL_KIT["Intermediate"]["Dumbells"]}' +
+                 '\nBarbell:' +
+                 f' {DUMBELL_KIT["Intermediate"]["Barbell"]}\nTotal Price:' +
+                 f' {DUMBELL_KIT["Intermediate"]["Total Price"]}')
         elif age >= 30 and age < 50:
             print('We recommend an Intermediate set')
             print('---------------------------')
-            print(f'Dumbells:{DUMBELL_KIT["Intermediate"]["Dumbells"]}' +
-            '\nBarbell:' +
-            f' {DUMBELL_KIT["Intermediate"]["Barbell"]}\nTotal Price:' +
-            f'{DUMBELL_KIT["Intermediate"]["Total Price"]}')
+            print(
+                 f'Dumbells:{DUMBELL_KIT["Intermediate"]["Dumbells"]}' +
+                 '\nBarbell:' +
+                 f' {DUMBELL_KIT["Intermediate"]["Barbell"]}\nTotal Price:' +
+                 f'{DUMBELL_KIT["Intermediate"]["Total Price"]}')
         elif age >= 50 and age < 65:
             print('We recommend a Beginner set')
             print('---------------------------')
-            print(f'Dumbells:{DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell:' +
-            f' {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price:' +
-            f' {DUMBELL_KIT["Beginner"]["Total Price"]}')
+            print(
+                 f'Dumbells:{DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell:' +
+                 f' {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price:' +
+                 f' {DUMBELL_KIT["Beginner"]["Total Price"]}')
         elif age >= 65:
             print('We recommend a Beginner set')
             print('---------------------------')
-            print(f'Dumbells:{DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell:' +
-            f' {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price:' +
-            f' {DUMBELL_KIT["Beginner"]["Total Price"]}')
+            print(
+                 f'Dumbells:{DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell:' +
+                 f' {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price:' +
+                 f' {DUMBELL_KIT["Beginner"]["Total Price"]}')
         else:
             print('Sorry, you are too young to purchase our gym kits.')
     elif bmi >= 25 and bmi < 30:
         if age > 18 and age < 30:
             print('We recommend an Advanced set')
             print('---------------------------')
-            print(f'Dumbells:{DUMBELL_KIT["Advanced"]["Dumbells"]}\nBarbell:' +
-            f' {DUMBELL_KIT["Advanced"]["Barbell"]}\nTotal Price:' +
-            f' {DUMBELL_KIT["Advanced"]["Total Price"]}')
+            print(
+                 f'Dumbells:{DUMBELL_KIT["Advanced"]["Dumbells"]}\nBarbell:' +
+                 f' {DUMBELL_KIT["Advanced"]["Barbell"]}\nTotal Price:' +
+                 f' {DUMBELL_KIT["Advanced"]["Total Price"]}')
         elif age >= 30 and age < 50:
             print('We recommend an Intermediate set')
             print('---------------------------')
-            print(f'Dumbells:{DUMBELL_KIT["Intermediate"]["Dumbells"]}' +
-            '\nBarbell:' +
-            f' {DUMBELL_KIT["Intermediate"]["Barbell"]}\nTotal Price:' +
-            f' {DUMBELL_KIT["Intermediate"]["Total Price"]}')
+            print(
+                 f'Dumbells:{DUMBELL_KIT["Intermediate"]["Dumbells"]}' +
+                 '\nBarbell:' +
+                 f' {DUMBELL_KIT["Intermediate"]["Barbell"]}\nTotal Price:' +
+                 f' {DUMBELL_KIT["Intermediate"]["Total Price"]}')
         elif age >= 50 and age < 65:
             print('We recommend a Beginner set')
             print('---------------------------')
-            print(f'Dumbells:{DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell:' +
-            f' {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price:' +
-            f' {DUMBELL_KIT["Beginner"]["Total Price"]}')
+            print(
+                 f'Dumbells:{DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell:' +
+                 f' {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price:' +
+                 f' {DUMBELL_KIT["Beginner"]["Total Price"]}')
         elif age >= 65:
             print('We recommend a Beginner set')
             print('---------------------------')
-            print(f'Dumbells:{DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell:' +
-            f' {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price:' +
-            f' {DUMBELL_KIT["Beginner"]["Total Price"]}')
+            print(
+                 f'Dumbells:{DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell:' +
+                 f' {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price:' +
+                 f' {DUMBELL_KIT["Beginner"]["Total Price"]}')
         else:
             print('Sorry, you are too young to purchase our gym kits.')
     elif bmi > 30:
         if age > 18 and age < 30:
             print('We recommend an Intermediate set')
             print('---------------------------')
-            print(f'Dumbells:{DUMBELL_KIT["Intermediate"]["Dumbells"]}' +
-            '\nBarbell:' +
-            f' {DUMBELL_KIT["Intermediate"]["Barbell"]}\nTotal Price:' +
-            f' {DUMBELL_KIT["Intermediate"]["Total Price"]}')
+            print(
+                 f'Dumbells:{DUMBELL_KIT["Intermediate"]["Dumbells"]}' +
+                 '\nBarbell:' +
+                 f' {DUMBELL_KIT["Intermediate"]["Barbell"]}\nTotal Price:' +
+                 f' {DUMBELL_KIT["Intermediate"]["Total Price"]}')
         elif age >= 30 and age < 50:
             print('We recommend an Intermediate set')
             print('---------------------------')
-            print(f'Dumbells:{DUMBELL_KIT["Intermediate"]["Dumbells"]}' +
-            '\nBarbell:' +
-            f' {DUMBELL_KIT["Intermediate"]["Barbell"]}\nTotal Price:' +
-            f' {DUMBELL_KIT["Intermediate"]["Total Price"]}')
+            print(
+                 f'Dumbells:{DUMBELL_KIT["Intermediate"]["Dumbells"]}' +
+                 '\nBarbell:' +
+                 f' {DUMBELL_KIT["Intermediate"]["Barbell"]}\nTotal Price:' +
+                 f' {DUMBELL_KIT["Intermediate"]["Total Price"]}')
         elif age >= 50 and age < 65:
             print('We recommend a Beginner set')
             print('---------------------------')
-            print(f'Dumbells:{DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell:' +
-            f' {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price:' +
-            f' {DUMBELL_KIT["Beginner"]["Total Price"]}')
+            print(
+                 f'Dumbells:{DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell:' +
+                 f' {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price:' +
+                 f' {DUMBELL_KIT["Beginner"]["Total Price"]}')
         elif age >= 65:
             print('We recommend a Beginner set')
             print('---------------------------')
-            print(f'Dumbells:{DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell:' +
-            f' {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price:' +
-            f' {DUMBELL_KIT["Beginner"]["Total Price"]}')
+            print(
+                 f'Dumbells:{DUMBELL_KIT["Beginner"]["Dumbells"]}\nBarbell:' +
+                 f' {DUMBELL_KIT["Beginner"]["Barbell"]}\nTotal Price:' +
+                 f' {DUMBELL_KIT["Beginner"]["Total Price"]}')
         else:
             print('Sorry, you are too young to purchase our gym kits.')
 
@@ -231,9 +247,10 @@ def main():
     get_user_gender()
     get_user_schedule()
     print('---------- Customer Information ----------')
-    print(f'Height: {CUSTOMER[0]}cms\nWeight: {CUSTOMER[1]}kgs\n' +
-    f'BMI: {CUSTOMER[2]}\nAge: {CUSTOMER[3]} years\n' +
-    f'Gender: {CUSTOMER[4]}\nSchedule: {CUSTOMER[5]} hours per week\n')
+    print(
+         f'Height: {CUSTOMER[0]}cms\nWeight: {CUSTOMER[1]}kgs\n' +
+         f'BMI: {CUSTOMER[2]}\nAge: {CUSTOMER[3]} years\n' +
+         f'Gender: {CUSTOMER[4]}\nSchedule: {CUSTOMER[5]} hours per week\n')
     get_dumbell_set(CUSTOMER[3], CUSTOMER[2])
 
 
